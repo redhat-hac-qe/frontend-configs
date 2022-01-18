@@ -1,0 +1,70 @@
+apiVersion: v1
+kind: Template
+metadata:
+  name: frontend-base
+objects:
+- apiVersion: cloud.redhat.com/v1alpha1
+  kind: Bundle
+  metadata:
+    name: landing-navigation
+  spec:
+    id: landing-navigation
+    envName: ${ENV_NAME}
+  customNav:
+    - id: rhel
+      appId: dashboard
+      title: Red Hat Enterprise Linux
+      href: /insights/inventory
+
+- apiVersion: cloud.redhat.com/v1alpha1
+  kind: Frontend
+  metadata:
+    name: chrome
+  spec:
+    envName: ${ENV_NAME}
+    title: Chrome
+    deploymentRepo: http://test
+    API:
+      versions:
+      - v1
+    frontend:
+      paths:
+      - /
+      - /config/chrome
+    image: ${CHROME_IMAGE}
+
+- apiVersion: cloud.redhat.com/v1alpha1
+  kind: Frontend
+  metadata:
+    name: landing
+  spec:
+    # Add fields here
+    envName: ${ENV_NAME}
+    title: landing
+    deploymentRepo: http://test
+    API:
+      versions:
+      - v1
+    frontend:
+      paths:
+      - /apps/landing
+    image: ${LANDING_IMAGE}
+    extensions:
+    - type: "cloud.redhat.com/frontend"
+      properties:
+        module:
+          manifestLocation: "/apps/landing/fed-mods.json"
+          modules:
+          - id: "landing"
+            module: "./RootApp"
+            routes:
+            - pathname: /
+              exact: true
+
+parameters:
+- name: ENV_NAME
+  required: true
+- name: CHROME_IMAGE
+  value: quay.io/redhat-cloud-services/chrome:1d0ec6fc63bb233c6bf5cc6a1a79c851d2afb48810
+- name: LANDING_IMAGE
+  value: quay.io/redhat-cloud-services/landing:3b067f63f54c7a9edd3c3e13156ec8aaa123a0c94
