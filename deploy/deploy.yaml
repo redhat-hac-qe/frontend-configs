@@ -6,6 +6,17 @@ objects:
 - apiVersion: cloud.redhat.com/v1alpha1
   kind: Bundle
   metadata:
+    name: insights-navigation
+  spec:
+    id: insights-navigation
+    title: RHEL
+    appList:
+    - inventory
+    envName: ${ENV_NAME}
+
+- apiVersion: cloud.redhat.com/v1alpha1
+  kind: Bundle
+  metadata:
     name: landing-navigation
   spec:
     id: landing-navigation
@@ -38,7 +49,6 @@ objects:
   metadata:
     name: landing
   spec:
-    # Add fields here
     envName: ${ENV_NAME}
     title: landing
     deploymentRepo: http://test
