@@ -12,6 +12,7 @@ objects:
     title: RHEL
     appList:
     - inventory
+    - advisor  # move this somewhere else, tbd
     envName: ${ENV_NAME}
 
 - apiVersion: cloud.redhat.com/v1alpha1
