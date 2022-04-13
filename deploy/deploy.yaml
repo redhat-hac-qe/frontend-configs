@@ -28,6 +28,19 @@ objects:
       href: /insights/inventory
 
 - apiVersion: cloud.redhat.com/v1alpha1
+  kind: Bundle
+  metadata:
+    name: settings-navigation
+  spec:
+    id: settings
+    envName: ${ENV_NAME}
+    title: Settings
+    appList:
+    - rbac
+    - notifications
+    - sources
+
+- apiVersion: cloud.redhat.com/v1alpha1
   kind: Frontend
   metadata:
     name: chrome
