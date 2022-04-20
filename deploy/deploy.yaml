@@ -89,6 +89,6 @@ parameters:
 - name: ENV_NAME
   required: true
 - name: CHROME_IMAGE
-  value: quay.io/cloudservices/insights-chrome-frontend:ad2c98f
+  value: quay.io/cloudservices/insights-chrome-frontend:ff65914
 - name: LANDING_IMAGE
   value: quay.io/redhat-cloud-services/landing:3b067f63f54c7a9edd3c3e13156ec8aaa123a0c94
