@@ -6,9 +6,9 @@ objects:
 - apiVersion: cloud.redhat.com/v1alpha1
   kind: Bundle
   metadata:
-    name: rhel-navigation
+    name: insights-navigation
   spec:
-    id: rhel-navigation
+    id: rhel
     title: RHEL
     appList:
     - inventory
