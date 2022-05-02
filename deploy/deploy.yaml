@@ -11,6 +11,7 @@ objects:
     id: rhel
     title: RHEL
     appList:
+    - dashboard
     - inventory
     - advisor
     - policies
@@ -27,7 +28,7 @@ objects:
     - id: rhel
       appId: dashboard
       title: Red Hat Enterprise Linux
-      href: /insights/inventory
+      href: /insights/dashboard
 
 - apiVersion: cloud.redhat.com/v1alpha1
   kind: Bundle
@@ -97,6 +98,22 @@ objects:
             - pathname: /
               exact: true
 
+- apiVersion: cloud.redhat.com/v1alpha1
+  kind: Frontend
+  metadata:
+    name: dashboard
+  spec:
+    envName: ${ENV_NAME}
+    deploymentRepo: https://github.com/RedHatInsights/insights-dashboard
+    title: Dashboard
+    image: ${DASHBOARD_IMAGE}
+    API:
+      versions:
+        - v1
+    frontend:
+      paths:
+        - /insights/dashboard
+
 parameters:
 - name: ENV_NAME
   required: true
@@ -104,3 +121,5 @@ parameters:
   value: quay.io/cloudservices/insights-chrome-frontend:0b89c37
 - name: LANDING_IMAGE
   value: quay.io/cloudservices/landing-page-frontend:0339bc8
+- name: DASHBOARD_IMAGE
+  value: quay.io/cloudservices/insights-dashboard-frontend:b4c61b6
