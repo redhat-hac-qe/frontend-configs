@@ -103,4 +103,4 @@ parameters:
 - name: CHROME_IMAGE
   value: quay.io/cloudservices/insights-chrome-frontend:0b89c37
 - name: LANDING_IMAGE
-  value: quay.io/redhat-cloud-services/landing:3b067f63f54c7a9edd3c3e13156ec8aaa123a0c94
+  value: quay.io/cloudservices/landing-page-frontend:0339bc8
