@@ -24,11 +24,9 @@ objects:
   spec:
     id: landing-navigation
     envName: ${ENV_NAME}
-  customNav:
-    - id: rhel
-      appId: dashboard
-      title: Red Hat Enterprise Linux
-      href: /insights/dashboard
+    appList:
+    - landing
+    - dashboard
 
 - apiVersion: cloud.redhat.com/v1alpha1
   kind: Bundle
@@ -86,17 +84,19 @@ objects:
       paths:
       - /apps/landing
     image: ${LANDING_IMAGE}
-    extensions:
-    - type: "cloud.redhat.com/frontend"
-      properties:
-        module:
-          manifestLocation: "/apps/landing/fed-mods.json"
-          modules:
-          - id: "landing"
-            module: "./RootApp"
-            routes:
-            - pathname: /
-              exact: true
+    navItems:
+    - appId: landing
+      title: Red Hat Enterprise Linux
+      href: /
+      product: "Red Hat Enterprise Linux"
+    module:
+      manifestLocation: "/apps/landing/fed-mods.json"
+      modules:
+      - id: "landing"
+        module: "./RootApp"
+        routes:
+        - pathname: /
+          exact: true
 
 - apiVersion: cloud.redhat.com/v1alpha1
   kind: Frontend
@@ -113,6 +113,13 @@ objects:
     frontend:
       paths:
         - /insights/dashboard
+    module:
+      manifestLocation: "/apps/dashboard/fed-mods.json"
+      modules:
+      - id: "dashboard"
+        module: "./RootApp"
+        routes:
+        - pathname: /insights/dashboard
 
 parameters:
 - name: ENV_NAME
