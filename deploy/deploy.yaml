@@ -9,7 +9,7 @@ objects:
     name: insights-navigation
   spec:
     id: rhel
-    title: RHEL
+    title: Red Hat Enterprise Linux
     appList:
     - dashboard
     - inventory
@@ -130,7 +130,7 @@ parameters:
 - name: ENV_NAME
   required: true
 - name: CHROME_IMAGE
-  value: quay.io/cloudservices/insights-chrome-frontend:0b89c37
+  value: quay.io/cloudservices/insights-chrome-frontend:d1f8684
 - name: LANDING_IMAGE
   value: quay.io/cloudservices/landing-page-frontend:0339bc8
 - name: DASHBOARD_IMAGE
