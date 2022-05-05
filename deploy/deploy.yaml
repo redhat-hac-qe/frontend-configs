@@ -24,9 +24,13 @@ objects:
   spec:
     id: landing-navigation
     envName: ${ENV_NAME}
-    appList:
-    - landing
-    - dashboard
+    customNav:
+    - expandable: true
+      routes:
+      - appId: dashboard
+        href: /insights/dashboard
+        title: Red Hat Insights
+      title: Red Hat Enterprise Linux
 
 - apiVersion: cloud.redhat.com/v1alpha1
   kind: Bundle
