@@ -50,6 +50,7 @@ objects:
     title: HAC
     appList:
       - hac-core
+      - hac-dev
     envName: ${ENV_NAME}
 
 - apiVersion: cloud.redhat.com/v1alpha1
