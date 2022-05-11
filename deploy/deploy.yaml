@@ -20,6 +20,17 @@ objects:
 - apiVersion: cloud.redhat.com/v1alpha1
   kind: Bundle
   metadata:
+    name: ansible-navigation
+  spec:
+    id: ansible
+    title: Ansible Automation Platform
+    appList:
+      - tower-analytics
+    envName: ${ENV_NAME}
+
+- apiVersion: cloud.redhat.com/v1alpha1
+  kind: Bundle
+  metadata:
     name: landing-navigation
   spec:
     id: landing-navigation
