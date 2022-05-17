@@ -43,6 +43,9 @@ objects:
         href: /insights/dashboard
         title: Red Hat Insights
       title: Red Hat Enterprise Linux
+    - appId: ansible
+      title: "Ansible Automation Platform"
+      href: "/ansible/ansible-dashboard"
 
 - apiVersion: cloud.redhat.com/v1alpha1
   kind: Bundle
