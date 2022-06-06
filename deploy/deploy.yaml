@@ -145,7 +145,7 @@ parameters:
 - name: ENV_NAME
   required: true
 - name: CHROME_IMAGE
-  value: quay.io/cloudservices/insights-chrome-frontend:d1f8684
+  value: quay.io/cloudservices/insights-chrome-frontend:f717fc8
 - name: LANDING_IMAGE
   value: quay.io/cloudservices/landing-page-frontend:0339bc8
 - name: DASHBOARD_IMAGE
