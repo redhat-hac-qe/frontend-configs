@@ -21,6 +21,28 @@ objects:
 - apiVersion: cloud.redhat.com/v1alpha1
   kind: Bundle
   metadata:
+    name: application-services-navigation
+  spec:
+    id: application-services
+    title: Application and Data Services
+    appList:
+      - subscriptions  # this should be moved into groupId 'business' eventually, pending RHCLOUD-19211
+    envName: ${ENV_NAME}
+
+- apiVersion: cloud.redhat.com/v1alpha1
+  kind: Bundle
+  metadata:
+    name: openshift-navigation
+  spec:
+    id: openshift
+    title: OpenShift
+    appList:
+      - subscriptions  # this should be moved into groupId 'business' eventually, pending RHCLOUD-19211
+    envName: ${ENV_NAME}
+
+- apiVersion: cloud.redhat.com/v1alpha1
+  kind: Bundle
+  metadata:
     name: ansible-navigation
   spec:
     id: ansible
