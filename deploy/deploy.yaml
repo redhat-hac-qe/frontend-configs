@@ -9,7 +9,7 @@ objects:
     name: insights-navigation
   spec:
     id: rhel
-    title: Red Hat Enterprise Linux
+    title: Red Hat Insights
     appList:
     - dashboard
     - inventory
