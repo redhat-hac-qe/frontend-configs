@@ -51,6 +51,7 @@ objects:
     title: Ansible Automation Platform
     appList:
       - tower-analytics
+      - automation-hub
     envName: ${ENV_NAME}
 
 - apiVersion: cloud.redhat.com/v1alpha1
