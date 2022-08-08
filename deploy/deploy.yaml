@@ -40,6 +40,7 @@ objects:
     title: OpenShift
     appList:
       - subscriptions  # this should be moved into groupId 'business' eventually, pending RHCLOUD-19211
+      - cost-management
     envName: ${ENV_NAME}
 
 - apiVersion: cloud.redhat.com/v1alpha1
