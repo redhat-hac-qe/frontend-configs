@@ -86,6 +86,7 @@ objects:
     - rbac
     - notifications
     - sources
+    - content-sources
 
 - apiVersion: cloud.redhat.com/v1alpha1
   kind: Bundle
