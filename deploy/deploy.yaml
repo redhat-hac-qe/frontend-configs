@@ -12,6 +12,7 @@ objects:
     title: Red Hat Insights
     appList:
     - dashboard
+    - compliance
     - inventory
     - advisor
     - policies
