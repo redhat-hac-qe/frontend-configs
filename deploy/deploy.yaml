@@ -161,7 +161,7 @@ objects:
         - v1
     frontend:
       paths:
-        - /insights/dashboard
+        - /apps/dashboard
     module:
       manifestLocation: "/apps/dashboard/fed-mods.json"
       modules:
@@ -178,4 +178,4 @@ parameters:
 - name: LANDING_IMAGE
   value: quay.io/cloudservices/landing-page-frontend:0339bc8
 - name: DASHBOARD_IMAGE
-  value: quay.io/cloudservices/insights-dashboard-frontend:b4c61b6
+  value: quay.io/cloudservices/insights-dashboard-frontend:413c94a
