@@ -117,6 +117,10 @@ objects:
       - /
       - /config/chrome
     image: ${CHROME_IMAGE}
+    module:
+      manifestLocation: "/apps/chrome/fed-modules.json"
+      config:
+        ssoUrl: ${SSO_URL}
 
 - apiVersion: cloud.redhat.com/v1alpha1
   kind: Frontend
@@ -179,3 +183,5 @@ parameters:
   value: quay.io/cloudservices/landing-page-frontend:0339bc8
 - name: DASHBOARD_IMAGE
   value: quay.io/cloudservices/insights-dashboard-frontend:413c94a
+- name: SSO_URL
+  value: https://
