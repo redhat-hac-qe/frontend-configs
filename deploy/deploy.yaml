@@ -18,6 +18,7 @@ objects:
     - policies
     - ros
     - patch
+    - malware
     - provisioning
     - subscriptions  # this should be moved into groupId 'business' eventually, pending RHCLOUD-19211
     envName: ${ENV_NAME}
