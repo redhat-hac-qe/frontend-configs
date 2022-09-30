@@ -17,6 +17,7 @@ objects:
     - advisor
     - policies
     - ros
+    - remediations
     - patch
     - malware
     - provisioning
