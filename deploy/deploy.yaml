@@ -121,7 +121,7 @@ objects:
       - /config/chrome
     image: ${CHROME_IMAGE}
     module:
-      manifestLocation: "/apps/chrome/fed-modules.json"
+      manifestLocation: "/apps/chrome/js/fed-mods.json"
       config:
         ssoUrl: ${SSO_URL}
 
@@ -181,7 +181,7 @@ parameters:
 - name: ENV_NAME
   required: true
 - name: CHROME_IMAGE
-  value: quay.io/cloudservices/insights-chrome-frontend:1886d7d
+  value: quay.io/cloudservices/insights-chrome-frontend:8e42613
 - name: LANDING_IMAGE
   value: quay.io/cloudservices/landing-page-frontend:0339bc8
 - name: DASHBOARD_IMAGE
