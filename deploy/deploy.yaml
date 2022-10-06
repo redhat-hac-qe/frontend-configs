@@ -21,6 +21,13 @@ objects:
     - patch
     - malware
     - provisioning
+    - image-builder
+    - vulnerability
+    - malware
+    - drift
+    - registration
+    - trust
+    - apiDocs
     - subscription-inventory
     - subscriptions  # this should be moved into groupId 'business' eventually, pending RHCLOUD-19211
     envName: ${ENV_NAME}
