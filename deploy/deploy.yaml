@@ -19,6 +19,7 @@ objects:
     - ros
     - remediations
     - patch
+    - tasks
     - malware
     - provisioning
     - image-builder
