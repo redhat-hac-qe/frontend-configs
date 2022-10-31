@@ -35,6 +35,7 @@ objects:
     - policies
     - edge
     - rhsm
+    - tower-analytics
     envName: ${ENV_NAME}
 
 - apiVersion: cloud.redhat.com/v1alpha1
