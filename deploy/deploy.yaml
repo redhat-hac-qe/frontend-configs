@@ -35,7 +35,6 @@ objects:
     - policies
     - edge
     - rhsm
-    - connector
     envName: ${ENV_NAME}
 
 - apiVersion: cloud.redhat.com/v1alpha1
@@ -104,6 +103,7 @@ objects:
     - notifications
     - sources
     - content-sources
+    - connector
 
 - apiVersion: cloud.redhat.com/v1alpha1
   kind: Bundle
