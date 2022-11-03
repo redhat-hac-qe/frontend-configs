@@ -103,7 +103,7 @@ objects:
     - notifications
     - sources
     - content-sources
-    - sed-frontend
+    - connector
 
 - apiVersion: cloud.redhat.com/v1alpha1
   kind: Bundle
