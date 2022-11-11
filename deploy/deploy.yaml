@@ -35,6 +35,7 @@ objects:
     - policies
     - edge
     - rhsm
+    - hybrid-committed-spend
     envName: ${ENV_NAME}
 
 - apiVersion: cloud.redhat.com/v1alpha1
