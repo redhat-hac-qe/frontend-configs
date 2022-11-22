@@ -59,6 +59,7 @@ objects:
     appList:
       - subscriptions  # this should be moved into groupId 'business' eventually, pending RHCLOUD-19211
       - cost-management
+      - ccx-data-pipeline
     envName: ${ENV_NAME}
 
 - apiVersion: cloud.redhat.com/v1alpha1
