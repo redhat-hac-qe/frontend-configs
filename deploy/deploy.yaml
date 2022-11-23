@@ -33,9 +33,20 @@ objects:
     - subscriptions  # this should be moved into groupId 'business' eventually, pending RHCLOUD-19211
     - manifests
     - policies
-    - edge
+
     - rhsm
     - hybrid-committed-spend
+    envName: ${ENV_NAME}
+
+- apiVersion: cloud.redhat.com/v1alpha1
+  kind: Bundle
+  metadata:
+    name: edge-navigation
+  spec:
+    id: edge
+    title: Edge Management
+    appList:
+      - edge
     envName: ${ENV_NAME}
 
 - apiVersion: cloud.redhat.com/v1alpha1
