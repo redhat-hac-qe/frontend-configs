@@ -33,7 +33,6 @@ objects:
     - subscriptions  # this should be moved into groupId 'business' eventually, pending RHCLOUD-19211
     - manifests
     - policies
-
     - rhsm
     - hybrid-committed-spend
     envName: ${ENV_NAME}
