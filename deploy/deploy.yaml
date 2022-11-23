@@ -98,6 +98,9 @@ objects:
       - appId: dashboard
         href: /insights/dashboard
         title: Red Hat Insights
+      - appId: edge
+        href: /edge
+        title: Edge Management
       title: Red Hat Enterprise Linux
     - appId: ansible
       title: "Ansible Automation Platform"
