@@ -41,6 +41,17 @@ objects:
 - apiVersion: cloud.redhat.com/v1alpha1
   kind: Bundle
   metadata:
+    name: edge-navigation
+  spec:
+    id: edge
+    title: Edge Management
+    appList:
+      - edge
+    envName: ${ENV_NAME}
+
+- apiVersion: cloud.redhat.com/v1alpha1
+  kind: Bundle
+  metadata:
     name: application-services-navigation
   spec:
     id: application-services
