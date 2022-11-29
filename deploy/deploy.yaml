@@ -70,6 +70,7 @@ objects:
       - subscriptions  # this should be moved into groupId 'business' eventually, pending RHCLOUD-19211
       - cost-management
       - ccx-data-pipeline
+      - ocp-advisor
     envName: ${ENV_NAME}
 
 - apiVersion: cloud.redhat.com/v1alpha1
@@ -209,7 +210,7 @@ parameters:
 - name: ENV_NAME
   required: true
 - name: CHROME_IMAGE
-  value: quay.io/cloudservices/insights-chrome-frontend:8e42613
+  value: quay.io/cloudservices/insights-chrome-frontend:c730364
 - name: LANDING_IMAGE
   value: quay.io/cloudservices/landing-page-frontend:0339bc8
 - name: DASHBOARD_IMAGE
