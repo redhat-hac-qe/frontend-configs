@@ -57,7 +57,6 @@ objects:
     title: User Preferences
     appList:
       - user-preferences
-      - notifications
     envName: ${ENV_NAME}
 
 - apiVersion: cloud.redhat.com/v1alpha1
