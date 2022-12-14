@@ -105,6 +105,9 @@ objects:
     id: landing-navigation
     envName: ${ENV_NAME}
     customNav:
+    - appId: openshift
+      title: "OpenShift"
+      href: "/openshift"
     - expandable: true
       routes:
       - appId: dashboard
