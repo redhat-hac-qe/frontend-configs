@@ -82,6 +82,7 @@ objects:
       - cost-management
       - ccx-data-pipeline
       - ocp-advisor
+      - ocp-vulnerability
     envName: ${ENV_NAME}
 
 - apiVersion: cloud.redhat.com/v1alpha1
