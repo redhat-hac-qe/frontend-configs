@@ -28,7 +28,7 @@ objects:
     - drift
     - registration
     - trust
-    - apiDocs
+    - api-docs
     - subscription-inventory
     - subscriptions  # this should be moved into groupId 'business' eventually, pending RHCLOUD-19211
     - manifests
