@@ -28,13 +28,23 @@ objects:
     - drift
     - registration
     - trust
-    - api-docs
     - subscription-inventory
     - subscriptions  # this should be moved into groupId 'business' eventually, pending RHCLOUD-19211
     - manifests
     - policies
     - rhsm
     - hybrid-committed-spend
+    envName: ${ENV_NAME}
+
+- apiVersion: cloud.redhat.com/v1alpha1
+  kind: Bundle
+  metadata:
+    name: docs
+  spec:
+    id: docs
+    title: Documentation
+    appList:
+      - api-docs
     envName: ${ENV_NAME}
 
 - apiVersion: cloud.redhat.com/v1alpha1
