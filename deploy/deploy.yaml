@@ -12,13 +12,6 @@ objects:
     id: landing-navigation
     envName: ${ENV_NAME}
     customNav:
-    - title: "Build and Deploy Applications"
-      icon: "code"
-      expandable: true
-      routes:
-        - appId: application-services
-          title: "Application and Data Services"
-          href: "/application-services/overview"
     - title: "Manage Infrastructure"
       icon: "wrench"
       routes:
