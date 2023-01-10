@@ -3,41 +3,6 @@ kind: Template
 metadata:
   name: frontend-base
 objects:
-
-- apiVersion: cloud.redhat.com/v1alpha1
-  kind: Bundle
-  metadata:
-    name: landing-navigation
-  spec:
-    id: landing-navigation
-    envName: ${ENV_NAME}
-    customNav:
-    - title: "Build and Deploy Applications"
-      icon: "code"
-      expandable: true
-      routes:
-        - appId: application-services
-          title: "Application and Data Services"
-          href: "/application-services/overview"
-    - title: "Manage Infrastructure"
-      icon: "wrench"
-      routes:
-        - title: "OpenShift"
-          appId: openshift
-          href: "/openshift"
-        - title: Red Hat Enterprise Linux
-          expandable: true
-          routes:
-          - appId: dashboard
-            href: /insights/dashboard
-            title: Red Hat Insights
-          - appId: edge
-            href: /edge
-            title: Edge Management
-        - title: "Ansible Automation Platform"
-          appId: ansible
-          href: "/ansible/ansible-dashboard"
-
 - apiVersion: cloud.redhat.com/v1alpha1
   kind: Bundle
   metadata:
@@ -141,6 +106,30 @@ objects:
       - tower-analytics
       - automation-hub
     envName: ${ENV_NAME}
+
+- apiVersion: cloud.redhat.com/v1alpha1
+  kind: Bundle
+  metadata:
+    name: landing-navigation
+  spec:
+    id: landing-navigation
+    envName: ${ENV_NAME}
+    customNav:
+    - appId: openshift
+      title: "OpenShift"
+      href: "/openshift"
+    - expandable: true
+      routes:
+      - appId: dashboard
+        href: /insights/dashboard
+        title: Red Hat Insights
+      - appId: edge
+        href: /edge
+        title: Edge Management
+      title: Red Hat Enterprise Linux
+    - appId: ansible
+      title: "Ansible Automation Platform"
+      href: "/ansible/ansible-dashboard"
 
 - apiVersion: cloud.redhat.com/v1alpha1
   kind: Bundle
