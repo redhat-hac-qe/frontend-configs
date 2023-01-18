@@ -78,6 +78,7 @@ objects:
     title: Application and Data Services
     appList:
       - subscriptions  # this should be moved into groupId 'business' eventually, pending RHCLOUD-19211
+      - application-services-ui
     envName: ${ENV_NAME}
 
 - apiVersion: cloud.redhat.com/v1alpha1
