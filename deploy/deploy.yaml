@@ -236,10 +236,12 @@ parameters:
 - name: ENV_NAME
   required: true
 - name: CHROME_IMAGE
-  value: quay.io/cloudservices/insights-chrome-frontend:58a6d48
+  value: quay.io/cloudservices/insights-chrome-frontend:720317c
 - name: LANDING_IMAGE
-  value: quay.io/cloudservices/landing-page-frontend:dc4343d 
+  value: quay.io/cloudservices/landing-page-frontend:0fc334b
 - name: DASHBOARD_IMAGE
-  value: quay.io/cloudservices/insights-dashboard-frontend:7bcfa09 
+  value: quay.io/cloudservices/insights-dashboard-frontend:248fb61
 - name: SSO_URL
   value: https://
+
+
